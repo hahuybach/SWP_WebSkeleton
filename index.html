@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.jpg">
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- gg font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <title>Practice Quiz</title>
+</head>
+
+<body>
+    <!-- overlay -->
+    <section id="overlay"></section>
+    <!-- header  -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <!-- logo  -->
+                <div class="navbar__logo">
+                    <img src="./img/logo.jpg" alt="website logo">
+                </div>
+                <!-- Subject - Blog -  -->
+                <ul class="subject__blog">
+                    <li class="navbar__subject-blog"><a href="#course">Blog</a></li>
+                    <li class="navbar__subject-blog"><a href="#subject">Subject</a></li>
+                </ul>
+
+                <!-- links  -->
+                <ul class="navbar__links">
+                    <li class="navbar__link"><a href="#course">Course</a></li>
+                    <li class="navbar__link"><a href="#Quiz">Quiz</a></li>
+                    <li class="navbar__link"><a href="#Sale">Sale</a></li>
+                    <li class="navbar__link"><a href="#Setting">Setting</a></li>
+                </ul>
+                <a href="#footer"><button class="navbar__btn js-login">Login</button></a>
+                <!-- menu button  -->
+                <div class="navbar__icons">
+                    <div class="navbar__icon">
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <!-- LOGIN -->
+    <!-- <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="fas fa-times"></i>
+            </div>
+            <h1>Login</h1>
+            <form action="login" method="POST">
+                <div class="form-control">
+                    <input type="text" id="username" placeholder="Username" name="username" />
+                    <span></span>
+                    <small></small>
+                </div>
+                <div class="form-control">
+                    <input type="password" id="password" placeholder="Password" name="password" />
+                    <span></span>
+                    <small></small>
+                </div>
+                <input type="submit" value="Login" />
+                <div class="signup_link">Not a member ? <a href="#">Sign Up</a></div>
+            </form>
+        </div>
+    </div> -->
+
+    <!-- JS -->
+    <script src="./js/main.js"></script>
+    <script>
+        const buyBtns = document.querySelectorAll('.js-login')
+        const modal = document.querySelector('.js-modal')
+        const modalContainer = document.querySelector('.js-modal-container')
+        const modalClose = document.querySelector('.js-modal-close')
+        //hiển thị hàm modal mua vé( thêm class open vào modal)
+        function showBuyTickets() {
+            modal.classList.add('open')
+        }
+        //hàm ẩn modal mua vé(gỡ bỏ class open của modal)
+        function hideBuyTickets() {
+            modal.classList.remove('open')
+        }
+        //lặp qua từng thẻ button và nghe hành vi click
+        for (const buyBtn of buyBtns) {
+            buyBtn.addEventListener('click', showBuyTickets)
+        }
+        //nghe hành vi click vào nút button close
+        modalClose.addEventListener('click', hideBuyTickets)
+        // chống tràn
+        modal.addEventListener('click', hideBuyTickets)
+        modalContainer.addEventListener('click', function (event) {
+            event.stopPropagation()
+        })
+    </script>
+</body>

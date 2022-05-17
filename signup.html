@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="./css/main.css">
+        <link href="./css/login.css" rel="stylesheet" type="text/css"/>
+        <title>Quiz Practice</title>
+    </head>
+    <body>
+        <div class="container_signup">
+            <h1>Sign Up</h1>
+            <form action="signup" method="POST">
+                <div class="form-control">
+                    <input type="text" id="email" placeholder="Email" name="email" />
+                    <span></span>
+                    <small></small>
+                </div>
+                <div class="form-control">
+                    <input type="text" id="phoneNumber" placeholder="Phone number" name="phoneNumber" />
+                    <span></span>
+                    <small></small>
+                </div>
+                <div class="gender-details">
+                    <input type="radio" name="gender" id="dot-1">
+                    <input type="radio" name="gender" id="dot-2">
+                    <span class="gender-title">Gender</span>
+                    <div class="category">
+                        <label for="dot-1">
+                            <span class="dot one"></span>
+                            <span class="gender">Male</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                        </label>
+                        <label for="dot-2">
+                            <span class="dot two"></span>
+                            <span class="gender">Female</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <input type="password" id="password" placeholder="Password" name="password" />
+                    <span></span>
+                    <small></small>
+                </div>
+                <div class="form-control">
+                    <input type="password" id="confirmPassword" placeholder="Confirm password" name="password" />
+                    <span></span>
+                    <small></small>
+                </div>
+                <input type="submit" value="Sign Up" />
+                
+            </form>
+        </div>
+    </body>
+</html>
