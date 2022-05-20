@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Blog page</title>
+        <!-- Latest compiled and minified CSS -->
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+        <!-- jQuery library -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
+        <!-- Latest compiled JavaScript -->
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+        <link rel="icon" href="img/logo.jpg">
+        <!-- main css -->
+        <link rel="stylesheet" href="./css/main.css">
+        <!-- gg font  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+        <style>
+            .nav-item > a{
+                color: white;
+                text-decoration: none;
+            }
+            .nav-item > a:hover{
+                color: black;
+                text-decoration: none;
+            }
+            ul {
+                list-style-type: none;
+            }
+            ul > li{
+                margin-top: 10px;
+            }
+            ul > li > ul{
+                margin-right: 10%;
+                text-align: center;
+                display: none;
+            }
+            ul > li > ul > li{
+                margin-top: 20px;
+            }
+            ul > li:hover > ul{
+                display: block;
+            }
+            .post{
+                height: 200px;
+            }
+            a{
+                color: black;
+                text-decoration: none;
+            }
+            a:hover{
+                text-decoration: none;
+            }
+            .content-left{
+                display: inline-block;
+                text-align: center;
+                width: 20%;
+                vertical-align: middle;
+            }
+            .content-right{
+                display: inline-block;
+                width: 70%;
+                vertical-align: middle;
+            }
+            .content-left > img{
+                width: 80px;
+                height: 80px;
+            }
+            .latest-post{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <section id="overlay"></section>
+        <!-- header  -->
+        <header >
+            <div class="container">
+                <nav class="navbar">
+                    <!-- logo  -->
+                    <div class="navbar__logo">
+                        <img src="./img/logo.jpg" alt="website logo">
+                    </div>
+                    <!-- Subject - Blog -  -->
+                    <ul class="subject__blog">
+                        <li class="navbar__subject-blog"><a href="blog.html">Blog</a></li>
+                        <li class="navbar__subject-blog"><a href="subject.html">Subject</a></li>
+                    </ul>
+
+                    <!-- links  -->
+                    <ul class="navbar__links">
+                        <li class="navbar__link"><a href="#course">Course</a></li>
+                        <li class="navbar__link"><a href="#Quiz">Quiz</a></li>
+                        <li class="navbar__link"><a href="#Sale">Sale</a></li>
+                        <li class="navbar__link"><a href="#Setting">Setting</a></li>
+                    </ul>
+                    <a href="#footer"><button class="navbar__btn js-login">Login</button></a>
+                    <!-- menu button  -->
+                    <div class="navbar__icons">
+                        <div class="navbar__icon">
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </header>
+        <div class="nav-box" style="width: 20%;height: 80vh; background-color: grey ; text-align: center; padding-top: 70px;
+          display: inline-block; position: fixed; bottom: 0;">
+            <div>
+                <form action="" method="">
+                <input type="text" placeholder="Search for post">
+                <input type="submit" value="Search">
+                </form>
+            </div>
+            <div style="margin-top: 50px; font-size: 20px;">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Category</a>
+                        <ul>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Category1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Category2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="body-content" style="width: 50%; height: 100vh; display: inline-block; 
+        margin-left: 20%; padding: 10px; ">
+          
+            <a href="blogDetail.html">
+                <div class="post" style="border-top: 1px solid rgb(178, 178, 178); border-bottom: 1px solid rgb(178, 178, 178)">
+                    <div class="content-left">
+                        <img src="https://i.picsum.photos/id/1002/200/200.jpg?hmac=Tf8HIQ9ThNr5_OQwJQuQXmZ4JysJ2pdFOx0bjdHTc-g">
+                    </div>
+                    <div class="content-right">
+                        <h3>This is title. Lorem Ipsum is simply dummy text</h3>
+                        <h4>This is brief-info. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                        labore et dolore magna aliqua</h4>
+                        <p>Category: asdasd</p>
+                        <p>Updated date: 12/12/2111</p>
+                    </div>
+                </div>
+            </a>
+            <a href="blogDetail.html">
+                <div class="post" style="border-top: 1px solid rgb(178, 178, 178); border-bottom: 1px solid rgb(178, 178, 178)">
+                    <div class="content-left">
+                        <img src="https://i.picsum.photos/id/1002/200/200.jpg?hmac=Tf8HIQ9ThNr5_OQwJQuQXmZ4JysJ2pdFOx0bjdHTc-g">
+                    </div>
+                    <div class="content-right">
+                        <h3>This is title. Lorem Ipsum is simply dummy text</h3>
+                        <h4>This is brief-info. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                        labore et dolore magna aliqua</h4>
+                        <p>Category: asdasd</p>
+                        <p>Updated date: 12/12/2111</p>
+                    </div>
+                </div>
+            </a>
+            <a href="blogDetail.html">
+                <div class="post" style="border-top: 1px solid rgb(178, 178, 178); border-bottom: 1px solid rgb(178, 178, 178)">
+                    <div class="content-left">
+                        <img src="https://i.picsum.photos/id/1002/200/200.jpg?hmac=Tf8HIQ9ThNr5_OQwJQuQXmZ4JysJ2pdFOx0bjdHTc-g">
+                    </div>
+                    <div class="content-right">
+                        <h3>This is title. Lorem Ipsum is simply dummy text</h3>
+                        <h4>This is brief-info. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                        labore et dolore magna aliqua</h4>
+                        <p>Category: asdasd</p>
+                        <p>Updated date: 12/12/2111</p>
+                    </div>
+                </div>
+            </a>
+            
+        </div>
+        <div class="latest-post" style="width: 25%; height: 100vh; display: inline-block; border: 1px solid black; vertical-align: top;">
+            <h2>Latest posts</h2>
+
+        </div>
+    </body>
+    <script src="./js/main.js"></script>
+</html>

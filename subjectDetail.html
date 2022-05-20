@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Subject page</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="icon" href="img/logo.jpg">
+        <!-- main css -->
+        <link rel="stylesheet" href="./css/main.css">
+        <!-- gg font  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+        <style>
+            .nav-item > a{
+                color: white;
+                text-decoration: none;
+            }
+            .nav-item > a:hover{
+                color: black;
+                text-decoration: none;
+            }
+            ul {
+                list-style-type: none;
+            }
+            ul > li{
+                margin-top: 10px;
+            }
+            ul > li > ul{
+                margin-right: 10%;
+                text-align: center;
+                display: none;
+            }
+            ul > li > ul > li{
+                margin-top: 20px;
+            }
+            ul > li:hover > ul{
+                display: block;
+            }
+            
+            a{
+                color: black;
+                text-decoration: none;
+            }
+            a:hover{
+                text-decoration: none;
+            }
+     
+            .left{
+                width: 20%;
+                display: inline-block;
+            }
+            .right{
+                text-align: justify;
+                margin-left: 10%;
+                width: 60%;
+                display: inline-block;
+            }
+
+            .register-btn{
+                font-size: 20px;
+                text-transform: uppercase;
+                width: 30%;
+                height: 50px;
+                color: white;
+                background-color: gray;
+                padding-top: 10px;
+                text-align: center;
+                margin: 30px 0px 0px 30%;
+            }
+            .register-btn:hover{
+                background-color: rgb(199, 61, 61);
+                transition-duration: 0.8s;
+            }
+            #modal{
+                width: 100%;
+                height: 110%;
+                background-color: rgba(0, 0, 0, 0.7);
+                position: fixed;
+                top: 0;
+                justify-content: center;
+                align-items: center;
+                z-index: 1;
+                overflow: auto;
+                
+            }
+            #modal{
+                display: none;
+            }
+            .modal-content{
+                margin-top: 5%;
+                margin-left: 30%;
+                width: 40%;
+                height: 80%;
+                background-color: white;
+            }
+            .form-span{
+                width: 50px;
+                display: inline-block;
+            }
+            form{
+                margin-left: 50px;
+                margin-top: 100px;
+            }
+            table{
+                margin-top: 30px;
+            }
+
+        </style>
+        
+    </head>
+    <body>
+        <!-- header  -->
+        <header >
+            <div class="container">
+                <nav class="navbar">
+                    <!-- logo  -->
+                    <div class="navbar__logo">
+                        <img src="./img/logo.jpg" alt="website logo">
+                    </div>
+                    <!-- Subject - Blog -  -->
+                    <ul class="subject__blog">
+                        <li class="navbar__subject-blog"><a href="#course">Blog</a></li>
+                        <li class="navbar__subject-blog"><a href="#subject">Subject</a></li>
+                    </ul>
+
+                    <!-- links  -->
+                    <ul class="navbar__links">
+                        <li class="navbar__link"><a href="#course">Course</a></li>
+                        <li class="navbar__link"><a href="#Quiz">Quiz</a></li>
+                        <li class="navbar__link"><a href="#Sale">Sale</a></li>
+                        <li class="navbar__link"><a href="#Setting">Setting</a></li>
+                    </ul>
+                    <a href="#footer"><button class="navbar__btn js-login">Login</button></a>
+                    <!-- menu button  -->
+                    <div class="navbar__icons">
+                        <div class="navbar__icon">
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </header>
+        <div class="nav-box" style="width: 20%;height: 80vh; background-color: grey ; text-align: center; padding-top: 70px;
+          display: inline-block; position: fixed; bottom: 0;">
+            <div>
+                <form action="" method="">
+                <input type="text" placeholder="Search for subject">
+                <input type="submit" value="Search">
+                </form>
+            </div>
+            <div style="margin-top: 50px; font-size: 20px;">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SubjectCategory</a>
+                        <ul>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">SubjectCategory1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">SubjectCategory2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="body-content" style="width: 60%; height: 80vh; display: inline-block; 
+        margin-left: 20%; padding: 10px; ">
+            <div class="left">
+                <img src="https://i.picsum.photos/id/1002/200/200.jpg?hmac=Tf8HIQ9ThNr5_OQwJQuQXmZ4JysJ2pdFOx0bjdHTc-g"
+                class="img-responsive">
+            </div>
+            <div class="right">
+                <h1>Math</h1>
+                <h3>"This is tagline"</h3>
+                <p>Lowest package: 100$</p>
+                <p>Brief Information: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                    ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+            </div>
+            <button class="register-btn" id="button1">Register</button>
+
+           
+            
+          
+            
+        </div>
+        <div class="" style="width: 15%; height: 80vh; display: inline-block; background-color: grey; vertical-align: top; text-align: center;">
+            <h2>Featured subjects</h2>
+
+        </div>
+
+        <!--Modal popup-->
+        <div class="register-modal" id="modal">
+            <div class="modal-content">
+                <div id="button2"  style="width:30px; height: 30px; float:right">
+                    <img src="img/xbutton.png" style="width: 30px; height: 30px;">
+                </div>
+                <form action="" method="">
+                    <h1>REGISTER SUBJECT</h1>
+                    <h2>Personal Information</h2>
+                    <table>
+                        <tr>
+                            <td>Full name</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><input type="email"></td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td><input type="radio" name="gender" value="1">Male <input type="radio" name="gender" value="0">Female</td>
+                        </tr>
+                        <tr>
+                            <td>Mobile</td>
+                            <td><input type="text"></td>
+                        </tr> 
+                    </table>
+                    <h2>Subject Information</h2>
+                    <table>
+                        
+                        <tr>
+                            <td>Subject name</td>
+                            <td>Math</td>
+                        </tr>
+                        <tr>
+                            <td>Subject Information</td>
+                            <td>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</td>
+                        </tr>
+                        <tr>
+                            <td>Price Package</td>
+                            <td><select>
+                                <option>100$/month</option>
+                                <option>200$/month</option>
+                                <option>300$/month</option>
+                            </select></td>
+                        </tr>
+                    </table>
+                    <input type="submit" value="Register now"> 
+                </form>
+            </div>
+        </div>
+        <script>
+            
+            var btn = document.getElementById('button1');
+            btn.addEventListener('click',open);
+            var modal = document.getElementById('modal');
+            document.getElementById('button2').addEventListener('click',close);
+            function open() {
+                modal.style.display = 'block';
+            }
+            function close(){
+                modal.style.display = 'none';
+            }
+        </script>
+    </body>
+</html>

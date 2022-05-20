@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.jpg">
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- carousel -->
+    <link rel="stylesheet" href="./css/carousel.css">
+    <link rel="stylesheet" href="./css/userProfile.css">
+    <!-- gg font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <title>Practice Quiz</title>
+</head>
+
+<body>
+    <!-- overlay -->
+    <section id="overlay"></section>
+    <!-- header  -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <!-- logo  -->
+                <div class="navbar__logo">
+                    <a href="index.html"><img src="./img/logo.jpg" alt="website logo"></a>
+                </div>
+                <!-- Subject - Blog -  -->
+                <ul class="subject__blog">
+                    <li class="navbar__subject-blog"><a href="blog.html">Blog</a></li>
+                    <li class="navbar__subject-blog"><a href="subject.html">Subject</a></li>
+                </ul>
+
+                <!-- links  -->
+                <ul class="navbar__links">
+                    <li class="navbar__link"><a href="#course">Course</a></li>
+                    <li class="navbar__link"><a href="#Quiz">Quiz</a></li>
+                    <li class="navbar__link"><a href="#Sale">Sale</a></li>
+                    <li class="navbar__link"><a href="#Setting">Setting</a></li>
+                    <li class="navbar__link"><a href="userProfile.html">Profile</a></li>
+                </ul>
+                <a href="login.html"><button class="navbar__btn js-login">Login</button></a>
+                <!-- menu button  -->
+                <div class="navbar__icons">
+                    <div class="navbar__icon">
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+    <div class="container" style="margin-top: 100px;">
+        <div class="profile__ava" style="display: inline-block; margin-bottom: 60px; position:absolute;">
+            <img src="./img/ava.png" alt="" style="width: 200px; ">
+            <div class="profile__ava">change your photo <a href="">Browse</a></div>
+            <button class="navbar__btn js-login" style="margin-left: 0; margin-top: 10px;">Change Password</button>
+        </div>
+        <div class="profile__info" style="display: inline-block; margin-left: 100px; font-size: 40; position: absolute; left: 600px;">
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" value="Nguyen Van A"> </td>
+                </tr>
+                <tr>
+                    <td>Mail</td>
+                    <td><input type="text" value="nguyenvana@gmail.com" readonly></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td><input type="text" value="Male"></td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td><input type="text" value="0123456789"></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><input type="text" value="Ha Noi"></td>
+                </tr> 
+                <tr>
+                    <td></td>
+                    <td><button class="navbar__btn js-login">Update</button></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+            </table>
+
+            
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>

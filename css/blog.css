@@ -1,0 +1,53 @@
+.nav-item > a{
+    color: white;
+    text-decoration: none;
+}
+.nav-item > a:hover{
+    color: black;
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+ul > li{
+    margin-top: 10px;
+}
+ul > li > ul{
+    margin-right: 10%;
+    text-align: center;
+    display: none;
+}
+ul > li > ul > li{
+    margin-top: 20px;
+}
+ul > li:hover > ul{
+    display: block;
+}
+.post{
+    height: 200px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+.content-left{
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    vertical-align: middle;
+}
+.content-right{
+    display: inline-block;
+    width: 70%;
+    vertical-align: middle;
+}
+.content-left > img{
+    width: 80px;
+    height: 80px;
+}
+.latest-post{
+    text-align: center;
+}
